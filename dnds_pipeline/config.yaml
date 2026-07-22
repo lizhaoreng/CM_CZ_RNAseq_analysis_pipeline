@@ -1,0 +1,54 @@
+# config.yaml
+
+species:
+  species1_code: "CM"
+  species2_code: "CZ"
+
+input:
+  orthogroup_file: "input/One_to_One_Orthologs.csv"
+  species1_cds: "input/CM_cds.fa"
+  species2_cds: "input/CZ_cds.fa"
+  species1_protein: "input/CM_proteins_cleaned.faa"
+  species2_protein: "input/CZ_proteins_cleaned.faa"
+  effector_list: "input/effector_one_to_one_list.txt"
+  cwde_list: "input/CWDE_one_to_one_list.txt"
+
+columns:
+  orthogroup_col: "orthogroup"
+  species1_protein_col: "cm_protein"
+  species2_protein_col: "cz_protein"
+
+output:
+  work_dir: "results"
+  renamed_dir: "results/renamed"
+  pair_protein_dir: "results/pairs_prot"
+  pair_cds_dir: "results/pairs_cds"
+  codon_alignment_dir: "results/codon_aln"
+  codeml_out_dir: "results/codeml_out"
+  codeml_branch_out_dir: "results/codeml_branch_out"
+  logs_dir: "results/logs"
+  figures_dir: "results/evolutionary_analysis"
+
+codeml:
+  threads: 8
+  codon_freq: 2
+  omega_initial: 1
+  kappa_initial: 2
+  cleandata: 1
+
+quality_filter:
+  min_effective_codons: 30
+  max_gap_percentage: 50
+  min_sequence_identity: 30
+  max_dS: 3
+  max_omega: 10
+
+branch_quality_filter:
+  min_effective_codons: 50
+  max_gap_percentage: 30
+  min_sequence_identity: 30
+  max_branch_omega: 50
+
+statistics:
+  fdr_method: "BH"
+  alpha: 0.05

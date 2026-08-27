@@ -6,7 +6,6 @@ This repository contains scripts and workflow files used for comparative genomic
 
 - `rnaseq_pipeline/`: RNA-seq read processing, mapping, quantification, and differential expression analysis.
 - `DeSeq2_GO_pipeline/`: DESeq2 differential expression and GO enrichment analysis.
-- `dnds_pipeline/`: pairwise ortholog and dN/dS analysis.
 - `functional_annotation_pipeline/`: CAZyme, PHI-base, KEGG, eggNOG, and InterPro annotation scripts.
 - `secretome_effector_pipeline/`: secretome and candidate effector prediction.
 - `marker_phylogeny_pipeline/`: multilocus phylogenetic analysis using ITS, TEF1, ACT, CAL, and HIS3.

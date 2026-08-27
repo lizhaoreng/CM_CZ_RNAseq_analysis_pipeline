@@ -1,4 +1,4 @@
-# CM-CZ Comparative Genomics and Transcriptomics Pipelines
+# CM-CZ Comparative  Transcriptomics Pipelines
 
 This repository contains scripts and workflow files used for comparative genomics, pathogen-focused RNA-seq analysis, GO enrichment,  secretome/effector prediction, marker phylogeny, and functional annotation of representative *Cercospora zeae-maydis* and *Cercospora zeina* isolates.
 
